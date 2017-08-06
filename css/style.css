@@ -1,0 +1,149 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Rubik', Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+img {
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+}
+
+header,
+main,
+footer,
+.container {
+	width: 100%;
+}
+/************
+HEADER
+********** */
+
+header {
+	background: #000;
+	color: #fff;
+	padding: .5em 0;
+	margin-bottom:  0;
+}
+
+.logo {
+	font-family: 'Orbitron', Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-size: 2em;
+	padding-left: 2.5%;
+	margin: 20px 0 10px 0;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main-nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+}
+
+.main-nav a {
+	color: #fff;
+	font-size: 1.25em;
+	display: inline-block;
+	padding: 10px 15px;
+	margin: 0 1em;
+}
+
+.main-nav a:hover {
+	color: rgb(225, 100, 200);
+	border-bottom: 2px solid rgb(225, 100, 200)
+}
+
+.jumbotron {
+	background-image: url("../images/dtla.jpg");
+	background-color: rgba(0, 0, 0, .6);
+	background-blend-mode: darken;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 25%;
+	opacity: 0.9;
+	height: 70vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.headline {
+	text-shadow: 4px 4px 10px rgba(0, 0, 0, .8);
+	color: rgb(80, 200, 220);
+	font-size: 2em;
+}
+
+/************
+MAIN CONTENT
+********** */
+
+.col {
+	/*background: rgba(245, 245, 245, .1);
+	box-shadow: 0 1px 4px  rgba(0, 0, 0, .8);*/
+	padding: 8px 8px;
+	margin: 10px;
+}
+
+.col h3 {
+	text-align: center;
+	color: rgb(225, 100, 200);
+	font-weight: bolder;
+	margin-top: 0;
+}
+
+/************
+FOOTER
+********** */
+
+footer {
+	background: #000;
+	color: #fff;
+	padding: 1em 0;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.social-profiles {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+@media screen and (min-width: 769px) {
+	nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+	}
+
+	.col {
+		flex: 1;
+	}
+}
+
+@media (min-width: 1025px) {
+
+}
