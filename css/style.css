@@ -72,7 +72,7 @@ nav {
 
 .jumbotron {
 	background-image: linear-gradient(rgba(0, 0, 0, 1) -5%, transparent, rgba(255, 255, 255, 1) 90%),
-										url("../img/dtla.jpg");
+										url("../img/dtla.JPG");
 	background-color: rgba(0, 0, 0, .6);
 	background-size: cover;
 	background-repeat: no-repeat;
